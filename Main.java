@@ -53,6 +53,8 @@ public class Main {
         for(int i=0;i< classWithoutImplCompartorOrComparables.length;i++){
             System.out.println(classWithoutImplCompartorOrComparables[i]);
         }
+	
+	// 5. Direct implementation of compareTo method inside custom class by implementing Comparable interface
 
         ClassimplComparable akshay2 = new ClassimplComparable("Akshay", 5.11f, 85);
         ClassimplComparable heema2 = new ClassimplComparable("Heema", 5.5f, 55);
