@@ -1,7 +1,6 @@
 package com.company;
 
-import java.util.Arrays;
-import java.util.Comparator;
+import java.util.*;
 
 public class Main {
 
@@ -19,7 +18,6 @@ public class Main {
         CustomClass raju = new CustomClass("Rajesh", 5.8f, 80);
 
         CustomClass[] person = {akshay,heema,raju};
-
         //1. Creating a object for class that implements comparator interface and compare method override in it.
         CustomClass c = new CustomClass();
         Arrays.sort(person,c);
@@ -55,5 +53,18 @@ public class Main {
         for(int i=0;i< classWithoutImplCompartorOrComparables.length;i++){
             System.out.println(classWithoutImplCompartorOrComparables[i]);
         }
+
+        ClassimplComparable akshay2 = new ClassimplComparable("Akshay", 5.11f, 85);
+        ClassimplComparable heema2 = new ClassimplComparable("Heema", 5.5f, 55);
+        ClassimplComparable raju2 = new ClassimplComparable("Rajesh", 5.8f, 80);
+        ArrayList<ClassimplComparable> classimplComparables = new ArrayList<ClassimplComparable>();
+        classimplComparables.add(akshay2);
+        classimplComparables.add(heema2);
+        classimplComparables.add(raju2);
+        Collections.sort(classimplComparables);
+        for(ClassimplComparable i : classimplComparables){
+            System.out.println(i);
+        }
+
     }
 }
